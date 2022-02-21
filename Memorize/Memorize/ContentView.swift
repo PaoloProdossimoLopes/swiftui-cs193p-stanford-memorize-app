@@ -76,32 +76,14 @@ struct ContentView: View {
     }
 }
 
-struct CardView: View {
-    let icon: String
-    
-    @State private var isFaceUp: Bool = false
-    
-    var body: some View {
-        ZStack {
-            let recShape = RoundedRectangle(cornerRadius: 20)
-            if isFaceUp {
-                recShape.fill().foregroundColor(.white)
-                recShape.strokeBorder(lineWidth: 3)
-                Text(icon).font(.largeTitle)
-            } else {
-                recShape.fill()
-            }
-        }.onTapGesture { isFaceUp.toggle() }
-    }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .preferredColorScheme(.light)
-.previewInterfaceOrientation(.portrait)
+            .previewInterfaceOrientation(.portrait)
         
         ContentView()
             .preferredColorScheme(.dark)
+            .previewInterfaceOrientation(.portrait)
     }
 }
