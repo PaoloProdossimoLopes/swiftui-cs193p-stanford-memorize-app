@@ -12,8 +12,7 @@
  -->
 
 <!-- PROJECT NAME -->
-#  REPOSITORY TEMPLATE
-
+#  CS193p STANFORD MEMRORIZE GAME
 <!-- DESCRIPTION -->
 This project are created for using as template for others repository.
 
